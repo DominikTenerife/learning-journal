@@ -108,8 +108,7 @@ object-fit: cover;
        "main main main"
        "section section section"
        "footer footer footer";
-       max-width: 800px;
-       align-self: center;
+       
     }
     
     header {

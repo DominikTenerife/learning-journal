@@ -99,7 +99,7 @@ object-fit: cover;
     font-size: 1.4rem;
 }
 
-@media (min-width: 500px){
+@media (min-width: 600px){
     
     .grid {
        display: grid; 
@@ -141,5 +141,9 @@ object-fit: cover;
         .header-links {
             font-size: 1.1rem;
         }
+
+     .intro-text {
+        max-width: 800px;
+     }   
     
 }

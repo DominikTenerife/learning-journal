@@ -1,0 +1,142 @@
+html, 
+body {
+    font-family: 'Source Sans Pro';
+    margin: 0;
+    padding: 0;
+    font-size: 0.8rem;
+    min-width: 150px;
+   
+}
+
+header {
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    
+}
+
+main {
+    position: relative;
+    
+    height: 300px;
+    background-image: url("images/sunset1.png");
+    background-size: cover;
+    color: white;
+    font-size: clamp(1.0rem, 4vw, 1.5rem);
+    margin-bottom: 1em;
+    overflow: hidden;
+    text-shadow: 1px 1px black;
+  
+}
+
+section {
+    padding: 0 5%;
+    line-height: 1.2rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    display:block;
+    text-align: center;
+    padding: 1em
+
+    
+}
+.grid {min-width: 250px;}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    font-size: 1rem;
+    
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+    font-size: 0.8rem;
+}
+
+.image-container {
+    width: 90%;
+    height: 15em;
+    overflow:hidden;
+    
+}
+
+.article-img {
+  width: 20em;
+  height: 15em;
+object-fit: cover;
+    
+}
+
+.article-img:hover,
+.article-img:focus {
+    opacity: 0.7;
+}
+
+.intro {
+    
+    position: absolute;
+    width: 90%;
+    bottom: 1em;
+    padding-left: 5%;
+    padding-bottom: 0.5em;
+    max-height: 80%;
+    min-height:50%;
+    
+}
+
+.fa-solid {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 500px){
+    
+    .grid {
+       display: grid; 
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "header header header"
+       "main main main"
+       "section section section"
+       "footer footer footer";
+       
+    }
+    
+    header {
+        grid-area: header;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+        grid-area: section;
+        
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    .header-title {
+            font-size: 1.3rem;
+        }
+        
+        .header-links {
+            font-size: 1.1rem;
+        }
+    
+}

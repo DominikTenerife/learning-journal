@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
-    min-width: 150px;
+    min-width: 100px;
    
 }
 
@@ -99,7 +99,7 @@ object-fit: cover;
     font-size: 1.4rem;
 }
 
-@media (min-width: 500px){
+@media (min-width: 400px){
     
     .grid {
        display: grid; 
